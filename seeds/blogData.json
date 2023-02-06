@@ -1,0 +1,17 @@
+[
+    {
+        "title":"How coding get easier in the future.",
+        "content":"AI will become better than humans at it",
+        "user_id":1
+    },
+    {
+        "title":"Why Pizza is the best food.",
+        "content":"Pizza has a wide variety of choice, maybe it's not the best but it's good",
+        "user_id":2
+    },
+    {
+        "title":"Cats vs Dogs.",
+        "content":"Cats are better because they are more self sufficent",
+        "user_id":3
+    }
+]
