@@ -9,7 +9,7 @@ createBlog.addEventListener('submit', (event) => {
     content: contentInput
   } = event.target.elements
 
-  const blogInfo = {
+  const blogData = {
     title: titleInput.value,
     content: contentInput.value
   }
@@ -19,7 +19,7 @@ createBlog.addEventListener('submit', (event) => {
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify(blogInfo)
+    body: JSON.stringify(blogData)
   })
   .then(response => {
     if (response.status === 200) {
