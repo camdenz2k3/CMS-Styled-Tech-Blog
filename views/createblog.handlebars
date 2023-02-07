@@ -1,0 +1,23 @@
+<div class="pt-4">
+  <div id="createPost" class="card my-3">
+    <div class="card-header navbar-dark bg-dark d-flex justify-content-between align-items-center">
+      <h4>Create New Post</h4>
+    </div>
+    <div class="card-body text-center bg-info bg-opacity-50 text-dark w-100 m-auto p-auto border border-dark border-top-0 border-4 rounded-bottom">
+      <form id="createBlog">
+        <div class="mb-3 mx-2 text-start text-dark">
+          <label for="title" class="form-label">Title</label>
+          <input type="text" class="form-control" name="title">
+        </div>
+        <div class="mb-3 mx-2 text-start text-dark">
+          <label for="content" class="form-label">Content</label>
+          <textarea type="text" class="form-control" name="content"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-25">Create</button>
+      </form>
+    </div>
+  </div>
+</div>
+<button id="GrabPost" type="button" class="fs-4 py-2 px-3 text-light bg-primary rounded fixed-bottom w-25 mx-auto mb-2">+ New Post</button>
+
+<script src="/js/create.js"></script>
