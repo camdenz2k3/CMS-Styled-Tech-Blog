@@ -10,5 +10,5 @@ I WANT a CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 ## Visual of Site
-![Picture of average blog site.](public/assets/websitess.png)
+![Picture of average blog site.](public/images/websitess.png)
 ## Deployed Link
