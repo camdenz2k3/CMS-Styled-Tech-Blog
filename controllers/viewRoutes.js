@@ -57,6 +57,26 @@ router.get('/createblog', withAuth, async (req, res) => {
   }
 })
 
+router.get('/editblog/:id', withAuth, async (req, res) => {
+  try {
+      let blog = await Blog.findOne({
+          where: {
+              id: req.params.id
+          },
+          include: User
+      })
+      blog = blog.get({plain: true})
+      console.log(blog)
+      res.render('editblog', {
+          blog,
+          url: req.originalUrl,
+          logged_in: req.session.logged_in
+      })
+  } catch(err) {
+      res.status(500).json(err)
+  }
+})
+
 router.get('/blog/:id', async (req, res) => {
   try {
       let blog = await Blog.findOne({

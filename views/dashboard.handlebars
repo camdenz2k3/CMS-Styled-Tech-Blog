@@ -1,10 +1,19 @@
+<style>
+.card h4 {
+color: aliceblue;
+}
+</style>
 {{#each blogs}}
 <div class="card my-2">
-  <div class="card-header navbar-dark bg-secondary rounded d-flex justify-content-between align-items-center row">
-    <a href="/editblog/{{id}}" class="col-8 col-sm-10 my-auto p-3 text-decoration-none text-reset">
+    <a href="/editblog/{{id}}" class="col-sm-12 my-auto text-decoration-none text-reset">
+ <div class="card-header navbar-dark bg-dark d-flex justify-content-between align-items-center">
+
       <h4>{{title}}</h4>
-    </a>
   </div>
+  <div class="card-body bg-danger bg-opacity-50 text-dark w-100 m-auto p-auto border border-dark border-top-0 border-4 rounded-bottom">
+    <h5>{{content}}</h5>
+  </div>
+</a>
 </div>
 {{/each}}
 
