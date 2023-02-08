@@ -63,7 +63,7 @@ router.get('/editblog/:id', withAuth, async (req, res) => {
           where: {
               id: req.params.id
           },
-          include: User
+          include: User, Comment
       })
       blog = blog.get({plain: true})
       console.log(blog)
